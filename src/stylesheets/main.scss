@@ -30,20 +30,29 @@ $six: $blue-dark;
   color: grey;
   font-weight: 300;
   background-color: #e7f8f3;
-  height: 100px; 
+  height: 100px;
+  width: 2200px;
 
   i {
-    color: $teal;
+    color: grey;
     padding: 0 0.4px;
     font-size: 2rem;
-  }
+  } 
+
 
   @include media-breakpoint-up(sm) {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    height: 120px;
+    text-align: center;
   }
 }
 
+.home_pics {
+  margin-left: 30px; 
+}
 .navbar {
+  margin-left: 30px;
+  margin-bottom: 30px;  
   li {
     padding: 0 0.7rem;
     font-size: 1.2rem;
@@ -66,6 +75,7 @@ $six: $blue-dark;
 
       &:hover {
         color: $teal;
+        border-bottom: 2px $primary;
       }
 
       &:active {
@@ -73,16 +83,12 @@ $six: $blue-dark;
       }
     }
   }
+}
 
-  form {
-    button {
-      background-color: $primary;
-
-      i {
-        color: $white;
-        font-size: 1rem;
-      }
-    }
+form {
+  i {
+    color: $primary;
+    font-size: 2rem;
   }
 }
 
@@ -97,9 +103,16 @@ $six: $blue-dark;
         color: $white;
       }
     }
+  } 
+}
+ 
+
+//ABOUT 
+.about {
+  p {
+    font-size: 1.4rem; 
   }
 }
-
 //THIS & THAT & RECIPES
 .this-that,
 .entrees,
@@ -112,8 +125,23 @@ $six: $blue-dark;
 }
 
 .recipes {
-  li {
-    text-align: center;
+  i {
+    font-size: 1.2rem; 
+    color: $teal; 
+  }
+  .navbar {
+    li {
+      text-align: center;
+      scroll-margin-left: 400px;
+      padding: 0 0 0.8rem;
+      font-weight: 400;
+      font-size: 1.2rem;
+    
+      i {
+        font-size: 1.2rem;
+        color: grey; 
+      }
+    }
   }
 }
 
@@ -137,6 +165,15 @@ p {
       color: $teal;
     }
   }
+} 
+
+//BLOG 
+i {
+  font-size: 1.2rem;
+  color: $teal; 
+}
+h5 {
+   color: black;
 }
 
 //THE FOOTER NAV
@@ -182,9 +219,15 @@ h5 {
   }
 }
 
-//COPYRIGHT  CONTENT
+.footer {
+  background-color: #f4fbff; 
+  margin-top: 200px;
+  width: 2200px; 
+}
+
 .footer-bottom {
-  background-color: #dcf4ff;
+  background-color: #e2f6ff;
+  width: 2200px; 
 
   &__copyright {
     color: $gray-600;
