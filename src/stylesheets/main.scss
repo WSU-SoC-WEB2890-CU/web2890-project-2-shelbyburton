@@ -1,3 +1,227 @@
 /* Your styles go here */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+$mint-dark: #a9ccc1;
+$mint-light: #ebfff9;
+$teal: #38908f;
+$blue-light: #f8fdff;
+$blue: #b2d9ea;
+$blue-dark: #75a1b4;
+$white: #ffff;
+$grey-light: #f2f2f2;
+$grey-dark: #e6e6e6;
+
+$primary: $mint-dark;
+$secondary: $mint-light;
+$tertiary: $teal;
+
+$fourth: $blue-light;
+$fifth: $blue;
+$six: $blue-dark;
+
+//BODY
+.body {
+  background-color: whitesmoke;
+}
+
+//HEADER NAV
+.social-media {
+  color: grey;
+  font-weight: 300;
+  background-color: #e7f8f3;
+  height: 100px; 
+
+  i {
+    color: $teal;
+    padding: 0 0.4px;
+    font-size: 2rem;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.6rem;
+  }
+}
+
+.navbar {
+  li {
+    padding: 0 0.7rem;
+    font-size: 1.2rem;
+
+    .dropdownmenu {
+      &:hover {
+        color: $teal;
+      }
+
+      &:active {
+        background-color: $grey-light;
+      }
+    }
+
+    a {
+      color: grey;
+      padding: 0 0.7rem;
+      text-transform: capitalize;
+      font-weight: 200;
+
+      &:hover {
+        color: $teal;
+      }
+
+      &:active {
+        background-color: $grey-light;
+      }
+    }
+  }
+
+  form {
+    button {
+      background-color: $primary;
+
+      i {
+        color: $white;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+//FORM AND BUTTONS
+.email {
+  form {
+    button {
+      background-color: $primary;
+      color: $white;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
+
+//THIS & THAT & RECIPES
+.this-that,
+.entrees,
+.cocktails,
+.extras {
+  h2 {
+    background-color: $grey-dark;
+    text-align: center;
+  }
+}
+
+.recipes {
+  li {
+    text-align: center;
+  }
+}
+
+h2 {
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+    }
+  }
+}
+
+p {
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+}
+
+//THE FOOTER NAV
+.links-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+  font-size: 1rem;
+
+  li {
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+
+    a {
+      color: black;
+      text-decoration: none;
+
+      &:hover {
+        color: $teal;
+      }
+    }
+  }
+
+  i {
+    color: $teal;
+    padding: 0 0.4px;
+  }
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.4rem;
+  }
+}
+
+h5 {
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 2rem;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+}
+
+//COPYRIGHT  CONTENT
+.footer-bottom {
+  background-color: #dcf4ff;
+
+  &__copyright {
+    color: $gray-600;
+    font-weight: 400;
+
+    a {
+      color: $teal;
+      text-decoration: none;
+
+      &:hover {
+        color: $teal;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//BACK TO TOP BUTTON
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+  background-color: $primary;
+
+  i {
+    color: $white;
+    font-size: 1rem;
+    @include absoluteCenter;
+  }
+}

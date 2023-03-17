@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WEB 2890 - Project 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="TODO: Project 2 ..." />
+
+    <link rel="stylesheet" href="./stylesheets/main.scss" />
+  </head>
+
+  <body>
+    <!--THE NAVBAR SECTION-->
+    <div class="social-media d-flex justify-content-right" style="background-color: #fafdfb; height: 100px">
+      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        Follow us on social
+        <ul class="list-inline links-list">
+          <a href="#"><i class="bi bi-facebook"></i></a>
+          <a href="#"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/mysmallkitchn/"><i class="bi bi-instagram"></i></a>
+          <a href="#"><i class="bi bi-telephone-fill"></i></a>
+          <a href="mailto: hello@mysmallkitch.com"><i class="bi bi-envelope"></i></a>
+        </ul>
+      </div>
+    </div>
+    <img
+      src="https://mysmallkitchn.com/wp-content/uploads/2022/12/Transparent-Logo-e1670467238661-1024x930.png"
+      alt="MySmallKitchn logo"
+      title="MySmallKitchn logo"
+      style="height: 243.5px; width: 221.1px"
+    />
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"> <i class="bi bi-list"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about-us.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                <i class="bi bi-stopwatch"></i> Recipes
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./entrees.html">Entrees</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="./side-dishes.html">Side Dishes</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="./snacks-desserts.html">Snacks & Desserts</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="./cocktails.html">Cocktails</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="./extras.html">Extras</a></li>
+                <li><hr class="dropdown-divider" /></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.amazon.com/"><i class="bi bi-bag"></i> Let's Shop Together</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.amazon.com/s?k=organization+and+storage&crid=2BRR6GVURLAL0&sprefix=organiz%2Caps%2C378&ref=nb_sb_ss_ts-doa-p_1_7"
+              >
+                <i class="bi bi-cart"></i> Organization</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./this-that.html">This & That</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn rounded-pill" type="submit"><i class="bi bi-search"></i></button>
+      </form>
+    </nav>
+    <hr />
+
+    <!--SIDE DISHES-->
+    <section class="side-dishes" id="side-dishes">
+      <div class="container mt-5">
+        <div class="row align-items-center justify-content-right">
+          <div class="col-md-6 intros text-start">
+            <h2 class="display-2">
+              <span class="display-2--intro fw-light">Side Dishes</span>
+              <hr style="width: 650px; height: 2px; color: grey" class="mx-auto" />
+            </h2>
+          </div> 
+          <p
+            class="display-2--description lh-base row align-items-center justify-content-center"
+            style="margin-top: 20px; margin-bottom: 10px; font-size: 1.5rem"
+          >
+            <br />
+          </p>
+          <img
+            src="images/cauliflower.png"
+            alt="cauliflower"
+            title="side-dishes-cauliflower"
+            class="img-fluid"
+            style="height: 400px; width: 500px; margin-bottom: 20px;"
+          />
+          <h2 class="display-1-intro">
+            <a href="https://mysmallkitchn.com/roasted-cauliflower/"> Air Fryer - Roasted Cauliflower </a>
+            <br />
+          </h2>
+          <p class = "display-10 fw-bold"> 
+            <i class="bi bi-clock"> 1 hr 45 min</i>
+          </p>
+          <p class="display fw-light">Recipes <i class="bi bi-arrow-right"></i> <a href="./side-dishes.html">Side Dishes</a> <br /></p>
+          <p>
+            Cauliflower is one of my favorite vegetables. <br /> Roasting it in the Breville Smart Air Fry Pro oven makes it quick and easy. <br>
+            Using parchment paper ornon-stick foil makes the clean-up easy too. With a full head of cauliflower,  <br> you’ll probably need to use
+            both of the baking sheets included with your Breville oven.
+            <br>
+            <br>
+          </p>
+          <hr /> 
+          <br>
+          <img
+            src="images/potatos.jpg"
+            alt="potatoes"
+            title="side-dishes-potatoes"
+            class="img-fluid"
+            style="height: 400px; width: 500px; margin-top: 20px; margin-bottom: 20px;"
+          />
+          <h2 class="display-1-intro">
+            <a href="https://mysmallkitchn.com/softball-potatoes/"> Softball Potatoes </a> 
+            <br/>
+          </h2>  
+          <p class = "display-10 fw-bold"> 
+            <i class="bi bi-clock"> 30 minutes</i>
+          </p>
+          <p class="display fw-light">Recipes <i class="bi bi-arrow-right"></i> <a href="./side-dishes.html">Side Dishes</a> <br /></p>
+          <p>
+            While most people may recognize this casserole as Funeral Potatoes, or Cheesy Potatoes, <br>
+             we call them Softball Potatoes.  For many years when we were first married, <br>
+              my husband, Gary and a group of college friends played in a
+            softball league. <br />
+            Each year we would go to a tournament in Eastern Washington and visit with one …  
+             <br>
+            <br>
+            <a href = "https://mysmallkitchn.com/softball-potatoes/">Read More <i class="bi bi-arrow-return-right"></i> </a>  
+          </p>
+            <br> 
+        </div> 
+        <br>
+        <hr>
+      </div> 
+    </section>
+       <!--THE FOOTER SECTION-->
+       <footer class="footer" style="margin-top: 50px">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 class="text-capitalize"><i class="bi bi-flower1"></i> Follow Along</h5>
+              <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px" />
+              <ul class="list-inline links-list">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.instagram.com/mysmallkitchn/"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-telephone-fill"></i></a>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 class="text-capitalize"><a href="index.html">Home</a></h5>
+              <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px" />
+              <ul class="list-inline links-list">
+                <li><a href="./entrees.html">Categories</a></li>
+                <li><a href="https://mysmallkitchn.com/blog/">What's New On the Blog</a></li>
+                <li><a href="./index.html">Browse Recipes</a></li>
+                <li><a href="https://www.amazon.com/">Shop Equiment</a></li>
+                <li>
+                  <a
+                    href="https://www.amazon.com/s?k=organization+and+storage&crid=2BRR6GVURLAL0&sprefix=organiz%2Caps%2C378&ref=nb_sb_ss_ts-doa-p_1_7"
+                    >Organization</a
+                  >
+                </li>
+                <li><a href="./this-that.html">This & That </a></li>
+                <li><a href="./about-us.html">About Us </a></li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+              <h5 class="text-capitalize">Contact Us</h5>
+              <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px" />
+              <ul class="list-inline links-list">
+                <li><a href="mailto:hello@mysmallkitchn.com">hello@mysmallkitchn.com</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom pt-5 pb-5">
+          <div class="container">
+            <div class="row text-left text-grey">
+              <div class="col-12">
+                <div class="footer-bottom__copyright">
+                  <span>&copy;</span
+                  ><span>
+                    Copyright 2023. MySmallKitchn. All Rights Reserved
+                    <a href="https://mysmallkitchn.com/privacy-policy-2/">Privacy Policy</a>
+                    <a href="https://mysmallkitchn.com/terms-and-conditions/">Terms of Use</a></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+      <a href="#" class="shadow rounded-circle back-to-top">
+        <i class="bi bi-chevron-up"></i>
+      </a>
+    <script type="module" src="./javascripts/main.js"></script>
+  </body>
+</html>
