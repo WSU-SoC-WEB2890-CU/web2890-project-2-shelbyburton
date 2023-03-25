@@ -23,36 +23,23 @@ $six: $blue-dark;
 //BODY
 .body {
   background-color: whitesmoke;
+  margin-left: 600px;
+  margin-right: 600px;
 }
 
+.header {
+  margin-left: 50px;
+  margin-top: 40px;
+}
 //HEADER NAV
-.social-media {
-  color: grey;
-  font-weight: 300;
-  background-color: #e7f8f3;
-  height: 100px;
-  width: 2200px;
-
-  i {
-    color: grey;
-    padding: 0 0.4px;
-    font-size: 2rem;
-  } 
-
-
-  @include media-breakpoint-up(sm) {
-    font-size: 1.2rem;
-    height: 120px;
-    text-align: center;
-  }
-}
-
-.home_pics {
-  margin-left: 30px; 
-}
 .navbar {
-  margin-left: 30px;
-  margin-bottom: 30px;  
+  margin-top: 20px;
+  .navbar-toggler-icon {
+    i {
+      font-size: 2rem;
+      color: $teal;
+    }
+  }
   li {
     padding: 0 0.7rem;
     font-size: 1.2rem;
@@ -83,36 +70,87 @@ $six: $blue-dark;
       }
     }
   }
+} 
+
+//SEARCH 
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
 }
 
-form {
-  i {
-    color: $primary;
-    font-size: 2rem;
-  }
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+//HOME
+.home_pics {
+  margin-left: 30px;
 }
 
 //FORM AND BUTTONS
 .email {
-  form {
-    button {
-      background-color: $primary;
-      color: $white;
-
-      &:hover {
-        color: $white;
-      }
+  h1 {
+    margin-left: 30px;
+    @include media-breakpoint-up(sm) {
+      margin-left: 100px;
     }
-  } 
-}
- 
-
-//ABOUT 
-.about {
-  p {
-    font-size: 1.4rem; 
   }
 }
+
+form {
+    i {
+      color: $primary;
+      font-size: 1.3rem;
+    }
+}
+
+//ABOUT
+.about {
+  p {
+    font-size: 1.4rem;
+  }
+}
+
+//BLOG
+.new-blog {
+  position: relative;
+  padding: 0;
+
+  &__card {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 2rem 1.25rem;
+    border-radius: 0.625rem;
+    margin-top: 10px;
+    height: 420px;
+    text-align: center;
+  }
+}
+
 //THIS & THAT & RECIPES
 .this-that,
 .entrees,
@@ -126,21 +164,39 @@ form {
 
 .recipes {
   i {
-    font-size: 1.2rem; 
-    color: $teal; 
+    font-size: 1.2em;
+    color: $teal;
   }
   .navbar {
     li {
       text-align: center;
       scroll-margin-left: 400px;
-      padding: 0 0 0.8rem;
+      padding: 0 0 0 1.2rem;
       font-weight: 400;
-      font-size: 1.2rem;
-    
+      font-size: 1.5rem;
+
+      a {
+        &:hover {
+          color: $teal;
+        }
+
+        &:active {
+          color: $grey-dark;
+          font-weight: 400;
+        }
+      }
+
       i {
         font-size: 1.2rem;
-        color: grey; 
+        color: $teal;
       }
+    }
+    button {
+      background-color: $white;
+      border: 3px solid $mint-dark;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      border-radius: 50px;
     }
   }
 }
@@ -165,23 +221,13 @@ p {
       color: $teal;
     }
   }
-} 
-
-//BLOG 
-i {
-  font-size: 1.2rem;
-  color: $teal; 
 }
-h5 {
-   color: black;
-}
-
 //THE FOOTER NAV
 .links-list {
   display: block;
   list-style-type: none;
   position: relative;
-  font-size: 1rem;
+  font-size: 18px;
 
   li {
     margin-bottom: 0.5rem;
@@ -196,14 +242,17 @@ h5 {
       }
     }
   }
-
   i {
     color: $teal;
-    padding: 0 0.4px;
+    padding: 0 1px;
+    font-size: 1.6rem;
   }
 
-  @include media-breakpoint-up(sm) {
+  @include media-breakpoint-up(md) {
     font-size: 1.4rem;
+  }
+  @include media-breakpoint-up(sm) {
+    font-size: 1.2rem;
   }
 }
 
@@ -220,14 +269,11 @@ h5 {
 }
 
 .footer {
-  background-color: #f4fbff; 
   margin-top: 200px;
-  width: 2200px; 
 }
 
 .footer-bottom {
   background-color: #e2f6ff;
-  width: 2200px; 
 
   &__copyright {
     color: $gray-600;
