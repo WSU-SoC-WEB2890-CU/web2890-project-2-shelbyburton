@@ -4,12 +4,12 @@ import "bootstrap"
 //Search Engine
 const f = document.getElementById('form');
 const q = document.getElementById('query');
-const google = 'https://www.google.com/search?q=site%3A+';
+const search = 'https://endearing-lily-476e26.netlify.app/';
 const site = 'https://endearing-lily-476e26.netlify.app/';
 
 function submitted(event) {
   event.preventDefault();
-  const url = google + site + '+' + q.value;
+  const url = search + site + '+' + q.value;
   const win = window.open(url, '_blank');
   win.focus();
 }
