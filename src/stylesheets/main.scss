@@ -28,12 +28,14 @@ $six: $blue-dark;
 }
 
 .header {
-  margin-left: 50px;
-  margin-top: 40px;
+  margin-left: 70px;
+  margin-top: 30px;
 }
 //HEADER NAV
 .navbar {
   margin-top: 20px;
+  margin-left: 20px;
+
   .navbar-toggler-icon {
     i {
       font-size: 2rem;
@@ -42,7 +44,14 @@ $six: $blue-dark;
   }
   li {
     padding: 0 0.7rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    @include media-breakpoint-up(sm) {
+      font-size: 1.2rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      font-size: 1.3rem;
+    }
 
     .dropdownmenu {
       &:hover {
@@ -70,45 +79,12 @@ $six: $blue-dark;
       }
     }
   }
-} 
-
-//SEARCH 
-#myInput {
-  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-  background-position: 10px 12px; /* Position the search icon */
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 100%; /* Full-width */
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-bottom: 12px; /* Add some space below the input */
-}
-
-#myUL {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-#myUL li a {
-  border: 1px solid #ddd; /* Add a border to all links */
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6; /* Grey background color */
-  padding: 12px; /* Add some padding */
-  text-decoration: none; /* Remove default text underline */
-  font-size: 18px; /* Increase the font-size */
-  color: black; /* Add a black text color */
-  display: block; /* Make it into a block element to fill the whole list */
-}
-
-#myUL li a:hover:not(.header) {
-  background-color: #eee; /* Add a hover effect to all links, except for headers */
 }
 
 //HOME
 .home_pics {
   margin-left: 30px;
+  font-size: 1.2rem;
 }
 
 //FORM AND BUTTONS
@@ -122,10 +98,10 @@ $six: $blue-dark;
 }
 
 form {
-    i {
-      color: $primary;
-      font-size: 1.3rem;
-    }
+  i {
+    color: $primary;
+    font-size: 1.3rem;
+  }
 }
 
 //ABOUT
@@ -139,6 +115,10 @@ form {
 .new-blog {
   position: relative;
   padding: 0;
+
+  i {
+    font-size: 1.4rem;
+  }
 
   &__card {
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
@@ -164,7 +144,7 @@ form {
 
 .recipes {
   i {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: $teal;
   }
   .navbar {
@@ -222,11 +202,32 @@ p {
     }
   }
 }
+
+//LET'S SHOP
+.shop {
+  button {
+    background-color: $teal;
+    font-size: 1.2rem;
+    a {
+      color: $white;
+    }
+  }
+}
+
+//ORGANIZATION
+.organization {
+  button {
+    background-color: $white;
+    border: 3px solid $teal; 
+    font-size: 1.2rem;
+    width: 250px; 
+  }
+}
 //THE FOOTER NAV
 .links-list {
   display: block;
   list-style-type: none;
-  position: relative;
+  position: sticky;
   font-size: 18px;
 
   li {
@@ -269,7 +270,7 @@ h5 {
 }
 
 .footer {
-  margin-top: 200px;
+  margin-top: 120px; 
 }
 
 .footer-bottom {

@@ -36,7 +36,7 @@
           <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
         </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-3 mb-3-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
             </li>
@@ -82,11 +82,8 @@
             <li class="nav-item">
               <a class="nav-link" href="./organization.html"><i class="bi bi-cart"></i> Organization</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./this-that.html">This & That</a>
-            </li>
           </ul>
-        </div>
+        </div> 
         <form id="form" role="search" class="d-flex" style="margin-right: 20px">
           <input
             class="form-control me-2 rounded-pill"
@@ -100,7 +97,7 @@
         </form>
       </div>
     </nav>
-    <hr style="margin-left: 100px; height: 1.5px; color: grey" class="mx-auto" />
+    <hr style="margin-left: 100px; height: 2.3px; color: grey" class="mx-auto" />
 
     <!--THE HOME SECTION -->
     <article class="home" id="home">
@@ -133,6 +130,7 @@
     <hr style="width: 400px; height: 2px; color: grey" class="mx-auto" />
     <br />
     <br />
+
     <!--FAVORITE RECIPES NAV-->
     <section class="recipes" id="recipes">
       <div class="container">
@@ -177,7 +175,7 @@
               </li>
             </ul>
           </nav>
-        </div>
+          </div>
       </div>
     </section>
     <br />
@@ -195,10 +193,10 @@
       </div>
       <br />
     </section>
-    <div class="row row-cols-1 row-cols-md-2 rows-cols-sm-1 g-4 d-flex align-items-center justify-content-center">
+    <div class="row row-cols-1 row-cols-md-2 rows-cols-sm-1 g-3 d-flex align-items-center justify-content-center">
       <div class="col">
         <a href="https://mysmallkitchn.com/category/small-appliances/" style="color: black; text-decoration: none">
-          <div class="card h-80 w-80" style="margin-left: 150px; margin-right: 50px">
+          <div class="card h-60 w-40" style="margin-right: 130px; margin-left: 130px">
             <img class="card-img-top" src="images/Small-Appliances-1024x683.jpeg" alt="applicances" />
             <div class="card-body text-grey" style="background-color: #a9ccc1">
               <h5 class="card-title d-flex justify-content-center">Small Applicances</h5>
@@ -208,10 +206,10 @@
       </div>
       <div class="col">
         <a
-          href="https://www.amazon.com/s?k=organization+and+storage&crid=2BRR6GVURLAL0&sprefix=organiz%2Caps%2C378&ref=nb_sb_ss_ts-doa-p_1_7"
+          href="./organization.html"
           style="color: black; text-decoration: none"
         >
-          <div class="card h-80 w-80" style="margin-right: 150px; margin-left: 50px">
+          <div class="card h-60 w-40" style="margin-right: 130px; margin-left: 130px;">
             <img
               class="card-img-top"
               src="https://mysmallkitchn.com/wp-content/uploads/2022/11/1-Organization.jpeg"
@@ -222,20 +220,11 @@
             </div>
           </div>
         </a>
-      </div>
-      <div class="col">
-        <a href="./this-that.html" style="color: black; text-decoration: none">
-          <div class="card h-80 w-80" style="margin-left: 150px; margin-right: 50px">
-            <img class="card-img-top" src="images/this-that.jpg" alt="this-that" />
-            <div class="card-body text-grey" style="background-color: #a9ccc1">
-              <h5 class="card-title d-flex justify-content-center">This & That</h5>
-            </div>
-          </div>
-        </a>
-      </div>
+      </div> 
+
       <div class="col">
         <a href="https://mysmallkitchn.com/category/did-you-know/" style="color: black; text-decoration: none">
-          <div class="card h-80 w-80" style="margin-right: 150px; margin-left: 50px">
+          <div class="card h-60 w-40" style="margin-right: 130px; margin-left: 130px; margin-top: 20px;">
             <img class="card-img-top" src="images/light-bulb.jpeg" alt="did-you-know" />
             <div class="card-body text-grey" style="background-color: #a9ccc1">
               <h5 class="card-title d-flex justify-content-center">Did You Know?</h5>
@@ -252,22 +241,22 @@
     <hr style="width: 650px; height: 2px; color: grey" class="mx-auto" />
     <!--EMAIL SUBSCRIPTION-->
     <section class="email-sub" id="email-sub" style="margin-top: 40px">
-      <div class="row d-flex justify-content-center-3 pb-3">
-        <div class="col-12 col-sm-6 col-lg-6 mx-auto">
-          <h2 class="lh-lg display-9" style="margin-left: 40px">
+      <div class="row d-flex justify-content-center me-2">
+        <div class="col-12 col-sm-6 col-lg-4 mx-auto">
+          <h2 class="lh-lg display-8" style="margin-left: 40px">
             Let us notify you about new recipes, reviews and products you may be interested in.
           </h2>
-          <form class="d-flex" role="email" data-success-message="Thank you for signing up. We will be in touch soon!">
+          <form class="d-flex" role="email" data-success-message="Thank you for signing up. We will be in touch soon!" style = "margin-left: 40px;">
             <input
-              class="form-control me-4 rounded-pill"
+              class="form-control mb rounded-pill"
               type="email"
               placeholder="Your email address..."
               aria-label="Email"
               required
             />
             <div class="col-lg-3 col-md-3 col-sm-3 mb-1">
-              <div class="text-center d-grid">
-                <button type="submit" class="btn rounded-pill pt-1 pb-1 text-grey" style="border: 2px solid #38908f">
+              <div class="text-center d-grid mt-1">
+                <button type="submit" class="btn rounded-pill pt-2 pb-1 text-grey" style="border: 2px solid #38908f; margin-left: 10px;">
                   Subscribe
                   <i class="bi bi-envelope"></i>
                 </button>
@@ -278,11 +267,12 @@
       </div>
     </section>
     <br />
+
     <!--THE FOOTER SECTION-->
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" >
       <div class="container mt-5">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-3 col-md-3 mx-auto">
             <h5 class="text-capitalize"><i class="bi bi-flower1"></i> Follow Along</h5>
             <hr class="bg-secondary d-inline-block mb-4" style="width: 120px; height: 2px" />
             <ul class="list-inline links-list">
@@ -290,13 +280,12 @@
               <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="https://www.instagram.com/mysmallkitchn/"><i class="bi bi-instagram"></i></a>
               <a href="#"><i class="bi bi-telephone-fill"></i></a>
-            </ul>
+            </ul> 
           </div>
-
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+          <div class="col-12 col-sm-6 col-md-3 mx-auto">
             <h5 class="text-capitalize"><a href="index.html">Home</a></h5>
             <hr class="bg-secondary d-inline-block mb-4" style="width: 100px; height: 2px" />
-            <ul class="list-inline links-list" style="margin-bottom: 40px">
+            <ul class="list-inline links-list" style = "margin-bottom: 50px;">
               <li><a href="./about-us.html">About Us </a></li>
               <li><a href="./index.html">Browse Recipes</a></li>
               <li><a href="https://mysmallkitchn.com/blog/">What's New On the Blog</a></li>
@@ -304,10 +293,10 @@
               <li>
                 <a href="./organization.html">Organization</a>
               </li>
-              <li><a href="./this-that.html">This & That </a></li>
             </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
+            </div>
+            
+          <div class="col-12 col-sm-6 col-md-3 mx-auto">
             <h5 class="text-capitalize">Contact Us</h5>
             <hr class="bg-secondary d-inline-block mb-4" style="width: 100px; height: 2px" />
             <ul class="list-inline links-list">

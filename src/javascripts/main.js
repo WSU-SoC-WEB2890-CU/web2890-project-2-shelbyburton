@@ -2,6 +2,7 @@
 import "bootstrap"
 
 //Search Engine
+//Search Engine
 const f = document.getElementById('form');
 const q = document.getElementById('query');
 const search = 'https://endearing-lily-476e26.netlify.app/';
@@ -15,3 +16,5 @@ function submitted(event) {
 }
 
 f.addEventListener('submit', submitted);
+
+

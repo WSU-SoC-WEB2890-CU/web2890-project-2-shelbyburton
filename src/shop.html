@@ -13,21 +13,18 @@
 
   <body>
     <!--THE NAVBAR SECTION-->
-    <div class="social-media d-flex justify-content-right"> 
-      <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-      Follow us on social
-      <ul class="list-inline links-list">
-        <a href="#"><i class="bi bi-facebook"></i></a> <a href="#"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.instagram.com/mysmallkitchn/"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-telephone-fill"></i></a>  
-        <a href="mailto: hello@mysmallkitch.com"><i class ="bi bi-envelope"></i></a>
-      </ul>
-      </div>
+    <div class="header">
+      <img
+        src="https://mysmallkitchn.com/wp-content/uploads/2022/12/Transparent-Logo-e1670467238661-1024x930.png"
+        alt="MySmallKitchn logo"
+        title="MySmallKitchn logo"
+        class="img-fluid"
+        style="height: 180.5px; width: 180.1px"
+      />
     </div>
-    <img src ="https://mysmallkitchn.com/wp-content/uploads/2022/12/Transparent-Logo-e1670467238661-1024x930.png" alt="MySmallKitchn logo" title="MySmallKitchn logo" style =" height: 243.5px; width: 221.1px;" >
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <button
+        <a
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -36,10 +33,10 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"> <i class="bi bi-list"></i></span>
-        </button>
+          <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
+        </a>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-3 mb-3-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html"><i class="bi bi-house"></i> Home</a>
             </li>
@@ -51,74 +48,187 @@
                 <i class="bi bi-stopwatch"></i> Recipes
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./entrees.html"><i class="fa-solid fa-utensils"></i> Entrees</a></li>
+                <li>
+                  <a class="dropdown-item" href="./entrees.html"><i class="fa-solid fa-utensils"></i> Entrees</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="./side-dishes.html"><i class="fa-solid fa-bowl-food"></i> Side Dishes</a></li>
+                <li>
+                  <a class="dropdown-item" href="./side-dishes.html"
+                    ><i class="fa-solid fa-bowl-food"></i> Side Dishes</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="./snacks-desserts.html"><i class="fa-solid fa-ice-cream"></i> Snacks & Desserts</a></li>
+                <li>
+                  <a class="dropdown-item" href="./snacks-desserts.html"
+                    ><i class="fa-solid fa-ice-cream"></i> Snacks & Desserts</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="./cocktails.html"> <i class="fa-solid fa-martini-glass-citrus"></i> Cocktails</a></li>
+                <li>
+                  <a class="dropdown-item" href="./cocktails.html">
+                    <i class="fa-solid fa-martini-glass-citrus"></i> Cocktails</a
+                  >
+                </li>
                 <li><hr class="dropdown-divider" /></li>
-                <li><a class="dropdown-item" href="./extras.html"><i class="fa-solid fa-jar"></i> Extras</a></li>
+                <li>
+                  <a class="dropdown-item" href="./extras.html"><i class="fa-solid fa-jar"></i> Extras</a>
+                </li>
                 <li><hr class="dropdown-divider" /></li>
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.amazon.com/"><i class="bi bi-bag"></i> Let's Shop Together</a>
+              <a class="nav-link" href="./shop.html"><i class="bi bi-bag"></i> Let's Shop Together</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://www.amazon.com/s?k=organization+and+storage&crid=2BRR6GVURLAL0&sprefix=organiz%2Caps%2C378&ref=nb_sb_ss_ts-doa-p_1_7"> <i class="bi bi-cart"></i> Organization</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./this-that.html">This & That</a>
+              <a class="nav-link" href="./organization.html"><i class="bi bi-cart"></i> Organization</a>
             </li>
           </ul>
-        </div>
+        </div> 
+        <form id="form" role="search" class="d-flex" style="margin-right: 20px">
+          <input
+            class="form-control me-2 rounded-pill"
+            type="search"
+            id="query"
+            name="q"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn rounded-pill" type="submit"><i class="bi bi-search"></i></button>
+        </form>
       </div>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 rounded-pill" type="search" placeholder="Search" aria-label="Search" />
-        <button class="btn btn rounded-pill" type="submit"><i class ="bi bi-search"></i></button>
-      </form>
     </nav>
-    
-    <hr>
-    <!--GOES DIRECTLY TO AMAZON-->
+    <hr style="margin-left: 100px; height: 2.3px; color: grey" class="mx-auto" />
+   
+   <!--LET'S SHOP TOGETHER-->
+    <section class="shop" id="shop">
+      <div class="container mt-5">
+        <div class="row align-items-center justify-content-right">
+          <div class="col-md-6 intros text-start">
+            <h2 class="display-2">
+              <span class="display-2--intro fw-light">Let's Shop Together</span>
+              <hr style="width: 600px; height: 2px; color: grey" class="mx-auto" />
+            </h2>
+          </div> 
+          <p
+            class="display-1--description lh-base row align-items-center justify-content-right"
+            style="margin-top: 20px; margin-bottom: 10px; font-size: 1.5rem; margin-left: 10px; color: grey;"
+          >  Browse thoughtfully curated items for your kitchen. 
+            <br /> 
+            <br>
+          </p> 
+          <br> 
+
+          <img
+            src="images/Blade-Grinder-Bodum-BISTRO-300x296.jpg"
+            alt="blade_grinder"
+            title="shop-blade-grinder"
+            class="img-fluid"
+            style="height: 400px; width: 500px; margin-bottom: 20px; margin-top: 20px; "
+          />
+          <h2 class="display-1-intro">
+            <a href= "https://www.amazon.com/Bodum-BISTRO-Grinder-Electric-Coffee/dp/B0043073WQ?crid=2WDQ3XOMNI206&keywords=bodum+blade+grinder&qid=1674708304&sprefix=bodum+blade+grinder,aps,113&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyR1BGWDdUVTM4UVpDJmVuY3J5cHRlZElkPUEwNjE3NjUyM1JXMEo4QlVJTkkwNCZlbmNyeXB0ZWRBZElkPUEwMDQ1MzcwNVFHTFhVWjNRRTJTJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=sl1&tag=mysmallkitch2-20&linkId=92174fa3ba9350d227c9c9accb4dc013&language=en_US&ref_=as_li_ss_tl">Bodum Blade Grinder </a>
+            <br />
+            <br>
+            <button class = "btn btn rounded-pill"><a href= "https://www.amazon.com/Bodum-BISTRO-Grinder-Electric-Coffee/dp/B0043073WQ?crid=2WDQ3XOMNI206&keywords=bodum+blade+grinder&qid=1674708304&sprefix=bodum+blade+grinder,aps,113&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyR1BGWDdUVTM4UVpDJmVuY3J5cHRlZElkPUEwNjE3NjUyM1JXMEo4QlVJTkkwNCZlbmNyeXB0ZWRBZElkPUEwMDQ1MzcwNVFHTFhVWjNRRTJTJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ%3D%3D&linkCode=sl1&tag=mysmallkitch2-20&linkId=92174fa3ba9350d227c9c9accb4dc013&language=en_US&ref_=as_li_ss_tl"> Buy Now </a></button>
+          </h2>
+          <hr /> 
+          <br>
+          <img
+            src="images/Manual-Grinder-Kinu-M47-300x277.jpg"
+            alt="smart-grinder"
+            title="smart-grinder"
+            class="img-fluid"
+            style="height: 400px; width: 500px; margin-top: 20px; margin-bottom: 20px;"
+          />
+          <h2 class="display-1-intro">
+            <a href="https://www.amazon.com/Kinu-Grinders-M47-Simplicity/dp/B0857HVGSQ?crid=2HHU7QU0DE45O&keywords=kinu+m47+coffee+grinder&qid=1674708724&sprefix=kinu,aps,100&sr=8-2&ufe=app_do:amzn1.fos.c3015c4a-46bb-44b9-81a4-dc28e6d374b3&linkCode=sl1&tag=mysmallkitch2-20&linkId=92e4fb87b5b8215cbd8009c09e19266f&language=en_US&ref_=as_li_ss_tl"> Kinu m47 Coffee Grinder </a> 
+            <br/>
+            <br>
+            <button class = "btn btn rounded-pill"><a href="https://www.amazon.com/Kinu-Grinders-M47-Simplicity/dp/B0857HVGSQ?crid=2HHU7QU0DE45O&keywords=kinu+m47+coffee+grinder&qid=1674708724&sprefix=kinu,aps,100&sr=8-2&ufe=app_do:amzn1.fos.c3015c4a-46bb-44b9-81a4-dc28e6d374b3&linkCode=sl1&tag=mysmallkitch2-20&linkId=92e4fb87b5b8215cbd8009c09e19266f&language=en_US&ref_=as_li_ss_tl"> Buy Now </a> </button>
+          </h2>  
+          <hr> 
+          <br>
+          <img
+          src="images/breville-smart-grinder-pro-conical-burr-grinder-xl-300x300.png"
+          alt="burr-grinder"
+          title="burr-grinder"
+          class="img-fluid"
+          style="height: 400px; width: 500px; margin-top: 20px; margin-bottom: 20px;"
+        />
+        <h2 class="display-1-intro">
+          <a href="https://www.amazon.com/Breville-BCG820BSSXL-Grinder-Brushed-Stainless/dp/B00OXGXW8O?crid=BRKKHARCQNOE&keywords=breville%2Bsmart%2Bgrinder%2Bpro&qid=1674709014&sprefix=Breville%2BSmart%2BGrinder,aps,104&sr=8-2&th=1&linkCode=sl1&tag=mysmallkitch2-20&linkId=15b83afbb47e2fcbc609b9bac95c3e37&language=en_US&ref_=as_li_ss_tl"> Breville Smart Grinder Pro </a> 
+          <br/>
+          <br>
+          <button class = "btn btn rounded-pill"><a href="https://www.amazon.com/Breville-BCG820BSSXL-Grinder-Brushed-Stainless/dp/B00OXGXW8O?crid=BRKKHARCQNOE&keywords=breville%2Bsmart%2Bgrinder%2Bpro&qid=1674709014&sprefix=Breville%2BSmart%2BGrinder,aps,104&sr=8-2&th=1&linkCode=sl1&tag=mysmallkitch2-20&linkId=15b83afbb47e2fcbc609b9bac95c3e37&language=en_US&ref_=as_li_ss_tl"> Buy Now </a> </button>
+        </h2>  
+        <hr>
+        <br>
+        <img
+        src="images/Coffeemaker-B-D-12-Cup-Mill-Brew.png"
+        alt="coffee-maker"
+        title="mill&brew"
+        class="img-fluid"
+        style="height: 400px; width: 500px; margin-top: 20px; margin-bottom: 20px;"
+      />
+      <h2 class="display-1-intro">
+        <a href="https://www.amazon.com/BLACK-DECKER-12-Cup-Coffeemaker-CM5000B/dp/B00LU2I46E?crid=1F1ODO8T4PTW5&keywords=black+and+decker+12+cup+mill+and+brew&qid=1674708840&sprefix=Black+and+Decker+12+Cup+M,aps,90&sr=8-2&ufe=app_do:amzn1.fos.006c50ae-5d4c-4777-9bc0-4513d670b6bc&linkCode=sl1&tag=mysmallkitch2-20&linkId=da090e0e91653ba30d25fb1a4f32da02&language=en_US&ref_=as_li_ss_tl"> Black and Decker Mill & Brew </a> 
+        <br/>
+        <br>
+        <button class = "btn btn rounded-pill"><a href="https://www.amazon.com/BLACK-DECKER-12-Cup-Coffeemaker-CM5000B/dp/B00LU2I46E?crid=1F1ODO8T4PTW5&keywords=black+and+decker+12+cup+mill+and+brew&qid=1674708840&sprefix=Black+and+Decker+12+Cup+M,aps,90&sr=8-2&ufe=app_do:amzn1.fos.006c50ae-5d4c-4777-9bc0-4513d670b6bc&linkCode=sl1&tag=mysmallkitch2-20&linkId=da090e0e91653ba30d25fb1a4f32da02&language=en_US&ref_=as_li_ss_tl"> Buy Now </a> </button>
+      </h2>  
+       <br>
+      <hr>
+          <img
+          src="images/Breville-Smart-Oven-Pro-300x300.png"
+          alt="blade_grinder"
+          title="shop-blade-grinder"
+          class="img-fluid"
+          style="height: 400px; width: 500px; margin-bottom: 20px; margin-top: 20px; "
+        />
+        <h2 class="display-1-intro">
+          <a href= "https://www.amazon.com/Breville-BOV900BSS-Convection-Brushed-Stainless/dp/B01N5UPTZS?crid=1UJNADHKI33F8&keywords=breville+smart+oven+air+fryer+pro&qid=1674708932&sprefix=Breville+Smart+Oven+,aps,95&sr=8-1&linkCode=sl1&tag=mysmallkitch2-20&linkId=8ad98148ac1eaba979982f5d1a51e2d4&language=en_US&ref_=as_li_ss_tl">Breville Smart Oven Air Fryer Pro </a>
+          <br />
+          <br>
+          <button class = "btn btn rounded-pill"><a href= "https://www.amazon.com/Breville-BOV900BSS-Convection-Brushed-Stainless/dp/B01N5UPTZS?crid=1UJNADHKI33F8&keywords=breville+smart+oven+air+fryer+pro&qid=1674708932&sprefix=Breville+Smart+Oven+,aps,95&sr=8-1&linkCode=sl1&tag=mysmallkitch2-20&linkId=8ad98148ac1eaba979982f5d1a51e2d4&language=en_US&ref_=as_li_ss_tl"> Buy Now </a></button>
+        </h2>
+        <hr /> 
+        <br>
+        </div> 
+        <br>
+      </div> 
+    </section>
 
      <!--THE FOOTER SECTION-->
-     <footer class="footer" id = "footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 class="text-capitalize" style = "margin-top: 20px;"><i class="bi bi-flower1"></i> Follow Along</h5>
-            <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px" />
+     <footer class="footer" id="footer" >
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-sm-3 col-md-3 mx-auto">
+            <h5 class="text-capitalize"><i class="bi bi-flower1"></i> Follow Along</h5>
+            <hr class="bg-secondary d-inline-block mb-4" style="width: 120px; height: 2px" />
             <ul class="list-inline links-list">
               <a href="#"><i class="bi bi-facebook"></i></a>
               <a href="#"><i class="bi bi-twitter"></i></a>
               <a href="https://www.instagram.com/mysmallkitchn/"><i class="bi bi-instagram"></i></a>
               <a href="#"><i class="bi bi-telephone-fill"></i></a>
-            </ul>
+            </ul> 
           </div>
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 class="text-capitalize" style = "margin-top: 20px;"><a href="index.html">Home</a></h5>
-            <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px" />
-            <ul class="list-inline links-list">
-              <li><a href="./index.html">Categories</a></li>
-              <li><a href="https://mysmallkitchn.com/blog/">What's New On the Blog</a></li>
-              <li><a href="./index.html">Browse Recipes</a></li>
-              <li><a href="https://www.amazon.com/">Shop Equiment</a></li>
-              <li>
-                <a
-                  href="https://www.amazon.com/s?k=organization+and+storage&crid=2BRR6GVURLAL0&sprefix=organiz%2Caps%2C378&ref=nb_sb_ss_ts-doa-p_1_7"
-                  >Organization</a
-                >
-              </li>
-              <li><a href="./this-that.html">This & That </a></li>
+          <div class="col-12 col-sm-6 col-md-3 mx-auto">
+            <h5 class="text-capitalize"><a href="index.html">Home</a></h5>
+            <hr class="bg-secondary d-inline-block mb-4" style="width: 100px; height: 2px" />
+            <ul class="list-inline links-list" style = "margin-bottom: 50px;">
               <li><a href="./about-us.html">About Us </a></li>
+              <li><a href="./index.html">Browse Recipes</a></li>
+              <li><a href="https://mysmallkitchn.com/blog/">What's New On the Blog</a></li>
+              <li><a href="./shop.html">Shop Equiment</a></li>
+              <li>
+                <a href="./organization.html">Organization</a>
+              </li>
             </ul>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-2 mb-4 mx-auto">
-            <h5 class="text-capitalize" style = "margin-top: 20px;">Contact Us</h5>
-            <hr class="bg-secondary d-inline-block mb-4" style="width: 100%; height: 2px" />
+            </div>
+            
+          <div class="col-12 col-sm-6 col-md-3 mx-auto">
+            <h5 class="text-capitalize">Contact Us</h5>
+            <hr class="bg-secondary d-inline-block mb-4" style="width: 100px; height: 2px" />
             <ul class="list-inline links-list">
               <li><a href="mailto:hello@mysmallkitchn.com">hello@mysmallkitchn.com</a></li>
             </ul>
@@ -142,6 +252,7 @@
         </div>
       </div>
     </footer>
+
     <script type="module" src="./javascripts/main.js"></script>
   </body>
 </html>
